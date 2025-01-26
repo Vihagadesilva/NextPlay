@@ -1,0 +1,583 @@
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #333333); /* Black to dark grey to lighter grey gradient */
+  background-size: 200% 200%; /* For smooth gradient transition */
+  animation: gradientAnimation 10s ease infinite; /* Smooth gradient transition animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
+/* General Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #000000, #1a1a1a); /* Black to dark grey gradient */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+header .logo img {
+  height: 80px; /* Adjust logo size */
+}
+
+header nav {
+  flex-grow: 1;
+  display: flex;
+  padding-left: 30px;
+  flex-grow: 1;
+  justify-content: center;
+  margin-right: 5%;
+  
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+header nav ul li {
+  position: relative; /* For dropdown positioning */
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #f0f0f0; /* Light grey */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffffff;
+  background-color: #333333; /* Dark grey background on hover */
+  border-radius: 4px;
+}
+
+/* Dropdown Menu */
+header nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(135deg, #000000, #4b4b4b); /* Black to grey gradient */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Professional shadow */
+  border-radius: 8px;
+  padding: 10px 0;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+header nav ul li .dropdown a {
+  display: block;
+  padding: 12px 20px;
+  color: #f0f0f0;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li .dropdown a:hover {
+  background-color: #333333; /* Hover effect for dropdown links */
+  color: #ffffff;
+  border-left: 4px solid #f7f72a; /* Blue border on hover */
+}
+
+/* Show Dropdown on Hover */
+header nav ul li:hover .dropdown {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Fade-in Animation for Dropdown */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* FAQ Section Styling */
+.faq-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #333333); /* Black to dark grey gradient */
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite; /* Smooth gradient transition animation */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.faq-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.faq-item {
+  background-color: #000000;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide the checkboxes */
+.faq-toggle {
+  display: none;
+}
+
+/* FAQ Question Styling */
+.faq-question {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-question::after {
+  content: " +";
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* FAQ Answer Styling */
+.faq-answer {
+  font-size: 1.1rem;
+  color: #fbf5f5;
+  display: none;
+  margin-top: 15px;
+  line-height: 1.6;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Show the answer when checkbox is checked */
+.faq-toggle:checked + .faq-question + .faq-answer {
+  display: block;
+}
+
+/* Change the "+" symbol to "-" when the section is open */
+.faq-toggle:checked + .faq-question::after {
+  content: " -";
+  transform: rotate(180deg);
+}
+
+/* Add subtle animations when the answer expands */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 40px 15px;
+  }
+
+  .faq-question {
+    font-size: 1.2rem;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section h1 {
+    font-size: 2rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+}
+
+/* FAQ Form Section */
+.faq-form-section {
+    background-color: #121212;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq-form-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.faq-form-section p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #282727;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .faq-section h1,
+    .faq-form-section h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #e5e5e5;
+  padding: 70px 20px;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.footer-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Footer Content Layout */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 50px;
+}
+
+/* Left Section: Logo and Address */
+.footer-left {
+  flex: 1 1 30%;
+}
+
+.footer-left .footer-logo img {
+  margin-bottom: 20px;
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(255, 69, 0, 0.3));
+}
+
+.footer-left p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #c2c2c2;
+  margin-bottom: 12px;
+}
+
+.footer-left p a {
+  color: #f7f72a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-left p a:hover {
+  color: #ffd700;
+}
+
+/*left*/
+.footer-left {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.footer-left h3 {
+  font-size: 1.7rem;
+  color: #f7f72a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f7f72a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-left ul li {
+  margin-bottom: 10px;
+}
+
+.footer-left ul li a {
+  font-size: 1.1rem;
+  color: #e5e5e5;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.footer-left ul li a:hover {
+  color: #ffd700;
+  transform: translateX(5px);
+}
+
+/* Center Section: Quick Links */
+.footer-center {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.footer-center h3 {
+  font-size: 1.7rem;
+  color: #f7f72a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f7f72a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin-bottom: 10px;
+}
+
+.footer-center ul li a {
+  font-size: 1.1rem;
+  color: #e5e5e5;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.footer-center ul li a:hover {
+  color: #ffd700;
+  transform: translateX(5px);
+}
+
+/* Right Section: Social Media and Contact */
+.footer-right {
+  flex: 1 1 30%;
+  text-align: right;
+}
+
+.footer-right h3 {
+  font-size: 1.7rem;
+  color: #f7f72a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f7f72a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-right .social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer-right .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.3rem;
+  color: #fff;
+  background: linear-gradient(135deg, #f7f72a, #ff7300);
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(255, 69, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.footer-right .social-icons a:hover {
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5);
+}
+
+.footer-right p {
+  font-size: 1rem;
+  color: #c2c2c2;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.footer-right p a {
+  color: #f7f72a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-right p a:hover {
+  color: #ffd700;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #b5b5b5;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom p a {
+  color: #ff4500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom p a:hover {
+  color: #ffd700;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-right .social-icons {
+    justify-content: center;
+  }
+}
+
+
+/* Extra small devices (up to 480px width) */
+@media (max-width: 480px) {
+  
+
+  .introduction h1 {
+      font-size: 1.2rem;
+  }
+
+  .introduction p {
+      font-size: 1rem;
+  }
+
+  .services .service-box, .latest-news .news-box {
+      width: 100%;
+      max-width: 90%;
+  }
+}
+
+
+

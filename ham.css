@@ -1,0 +1,63 @@
+/* hamburger.css */
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+  }
+  
+  /* Mobile View: Hide navigation and show hamburger */
+  @media (max-width: 768px) {
+    header nav {
+      display: none; /* Hide navigation on mobile */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+    }
+  
+    /* Show hamburger button */
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Make navigation visible when active */
+    header nav.active {
+      display: block; /* Show the nav menu */
+    }
+  
+    header nav ul {
+      display: flex;
+      flex-direction: column; /* Stack links vertically */
+      text-align: center;
+    }
+  
+    header nav ul li {
+      padding: 15px 0;
+    }
+  
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  
+    header nav ul li a:hover {
+      background-color: #444;
+    }
+  }
+  
