@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Payment</title>
+  <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+
+  <div class="checkout-container">
+    <div class="checkout-box">
+      <h1 class="checkout-title">Secure Payment</h1>
+      
+      <form class="payment-form" id="paymentForm">
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>👤 Personal Info</legend>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone Number" required>
+        </fieldset>
+        
+        <!-- Delivery Info -->
+        <fieldset>
+          <legend>🚚 Delivery Address</legend>
+          <input type="text" placeholder="Street Address" required>
+          <input type="text" placeholder="City" required>
+          <input type="text" placeholder="Postal Code" required>
+          <input type="text" placeholder="Country" required>
+        </fieldset>
+        
+        <!-- Payment Info -->
+        <fieldset>
+          <legend>💳 Payment Details</legend>
+          <input type="text" placeholder="Cardholder Name" required>
+          <input type="text" placeholder="Card Number (e.g. 1234 5678 9012 3456)" maxlength="19" required>
+          <div class="half-inputs">
+            <input type="month" required>
+            <input type="text" placeholder="CVV" maxlength="4" required>
+          </div>
+        </fieldset>
+        
+        <button type="submit" class="pay-now">💰 Pay Now</button>
+      </form>
+    </div>
+    
+    <!-- Order Summary Section -->
+    <div class="order-summary">
+      <h2 class="summary-title">🛒 Order Summary</h2>
+      <div class="cart-items" id="orderItems">
+        <!-- Cart items will be displayed here -->
+      </div>
+      <div class="summary-info">
+        <div class="summary-row">
+          <span>Subtotal:</span>
+          <span id="subtotal">$0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping:</span>
+          <span id="shipping">$5.99</span>
+        </div>
+        <div class="summary-row">
+          <span>Tax (8%):</span>
+          <span id="tax">$0.00</span>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total:</span>
+          <span id="finalTotal">$0.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="payment.js"></script>
+
+</body>
+</html>

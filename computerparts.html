@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="parts.css">
+    <link rel="stylesheet" href="ham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+   
+    <title>upcoming-games</title>
+</head>
+<body>
+    <header>
+        <a href="Index.html" class="logo">
+            <img src="Weblogo.png" alt="Logo" style="height: 80px;">
+        </a>
+        
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="UPG.html">Upcoming Games</a></li>
+                <li>
+                    <a href="#accessories">Accessories</a>
+                    <div class="dropdown">
+                        <a href="gamingperi.html">Gaming Peripherals</a>
+                        <a href="consoles.html">Consoles</a>
+                        <a href="computerparts.html">Store</a>
+                    </div>
+                </li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <a href="cart.html" class="cart-indicator">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span id="cart-count">0</span> items
+                </a>
+            </ul>
+        </nav>
+    </header>
+     <script src="ham.js"></script>
+ <main>
+   <!-- Processors Section -->
+<section class="product-section" id="processors">
+    <h2>Processors</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/i9.png" alt="Intel Core i9">
+          <div class="price-tag">$499.99</div>
+        </div>
+        <h3>Intel Core i9</h3>
+        <p>12-core high-performance processor for gaming and editing.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+  
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/i7.jpg" alt="Intel Core i7">
+          <div class="price-tag">$399.99</div>
+        </div>
+        <h3>Intel Core i7</h3>
+        <p>10-core processor with fast multitasking capabilities.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+  
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/i5.webp" alt="Intel Core i5">
+          <div class="price-tag">$299.99</div>
+        </div>
+        <h3>Intel Core i5</h3>
+        <p>Great value for gamers and content creators.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+  
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/r9.jpg" alt="Ryzen 9">
+          <div class="price-tag">$479.99</div>
+        </div>
+        <h3>AMD Ryzen 9</h3>
+        <p>16-core processor built for extreme performance.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+  
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/r7.jpg" alt="Ryzen 7">
+          <div class="price-tag">$379.99</div>
+        </div>
+        <h3>AMD Ryzen 7</h3>
+        <p>Balanced performance for gaming and productivity.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+  
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/r5.webp" alt="Ryzen 5">
+          <div class="price-tag">$269.99</div>
+        </div>
+        <h3>AMD Ryzen 5</h3>
+        <p>Affordable 6-core processor with great performance.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Graphic Cards Section -->
+  <section class="product-section" id="graphics">
+    <h2>Graphic Cards</h2>
+    <div class="product-grid">
+     
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/4090.jpg" alt="RTX 4090">
+          <div class="price-tag">$1599.99</div>
+        </div>
+        <h3>RTX 4090</h3>
+        <p>Flagship GPU with unmatched performance.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/4080.jpg" alt="RTX 4090">
+          <div class="price-tag">$1199.99</div>
+        </div>
+        <h3>RTX 4080</h3>
+        <p>High-end graphics with ray tracing support.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/4070.png" alt="RTX 4090">
+          <div class="price-tag">$699.99</div>
+        </div>
+        <h3>RTX 4070</h3>
+        <p>Performance GPU for gamers and creators.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/rx7900.jpg" alt="RTX 4090">
+          <div class="price-tag">$999.99</div>
+        </div>
+        <h3>RX 7900 XT</h3>
+        <p>AMD’s latest powerhouse for 4K gaming.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/rx7800.png" alt="RTX 4090">
+          <div class="price-tag">$749.99</div>
+        </div>
+        <h3>RX 7800 XT</h3>
+        <p>High-performance AMD card for creators.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/3060.webp" alt="RTX 4090">
+          <div class="price-tag">$560</div>
+        </div>
+        <h3>RTX 3060</h3>
+        <p>RTX 3060 let you take on the latest games using the power of Ampere—NVIDIA’s 2nd generation RTX architecture.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      
+
+     
+   
+      
+    </div>
+  </section>
+  
+  <!-- Motherboards Section -->
+  <section class="product-section" id="motherboards">
+    <h2>Motherboards</h2>
+    <div class="product-grid">
+     
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/asus1.png" alt="ASUS Z790">
+          <div class="price-tag">$249.99</div>
+        </div>
+        <h3>ASUS Z790</h3>
+        <p>Top-tier board with PCIe 5.0 and DDR5 support.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/msib650.jpg" alt="MSI B650 Tomahawk">
+          <div class="price-tag">$189.99</div>
+        </div>
+        <h3>MSI B650 Tomahawk</h3>
+        <p>AM5 support with DDR5 and strong VRM cooling.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/giga.webp" alt="Gigabyte X670 AORUS Elite">
+          <div class="price-tag">$229.99</div>
+        </div>
+        <h3>Gigabyte X670 AORUS Elite</h3>
+        <p>Powerful board with great I/O and RGB lighting.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/B660M.png" alt="ASRock B660M Pro RS">
+          <div class="price-tag">$129.99</div>
+        </div>
+        <h3>ASRock B660M Pro RS</h3>
+        <p>Budget-friendly Intel 12th Gen motherboard.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/rog.png" alt="ASUS ROG Strix X570-F">
+          <div class="price-tag">$279.99</div>
+        </div>
+        <h3>ASUS ROG Strix X570-F</h3>
+        <p>Enthusiast board with robust features for gamers.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="image-container">
+          <img src="images/biostar.jpg" alt="BIOSTAR B450MH">
+          <div class="price-tag">$89.99</div>
+        </div>
+        <h3>BIOSTAR B450MH</h3>
+        <p>Entry-level AM4 board with solid performance.</p>
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+      
+      
+    </div>
+  </section>
+  
+  <!-- Memory Section -->
+  <section class="product-section" id="memory">
+    <h2>Memory (RAM)</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="image-container">
+              <img src="images/ddr4.png" alt="8GB DDR4 RAM">
+              <div class="price-tag">$39.99</div>
+            </div>
+            <h3>ADATA 8GB DDR4</h3>
+            <p>Basic RAM stick for everyday computing.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="image-container">
+              <img src="images/16gb.jpg" alt="16GB DDR4 RAM">
+              <div class="price-tag">$69.99</div>
+            </div>
+            <h3>Kingston 16GB DDR4</h3>
+            <p>Great for multitasking and gaming performance.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="image-container">
+              <img src="images/corsa.png" alt="16GB DDR5 RAM">
+              <div class="price-tag">$89.99</div>
+            </div>
+            <h3>CORSAIR VENGEANCE 16GB DDR5</h3>
+            <p>Next-gen memory with faster speeds and efficiency.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="image-container">
+              <img src="images/32gb.png" alt="32GB DDR5 RAM">
+              <div class="price-tag">$139.99</div>
+            </div>
+            <h3>Crucial 32GB DDR5</h3>
+            <p>High-end RAM for professionals and gamers.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+                
+    </div>
+  </section>
+  
+  <section class="product-section" id="Storagedevices">
+    <h2>Storage Devices</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="image-container">
+              <img src="images/500gb.jpg" alt="500GB SSD">
+              <div class="price-tag">$49.99</div>
+            </div>
+            <h3>Samsung 500GB SSD</h3>
+            <p>Fast and reliable SATA SSD for basic storage needs.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="image-container">
+              <img src="images/1tbssd.jpg" alt="1TB SSD">
+              <div class="price-tag">$89.99</div>
+            </div>
+            <h3>Samsung 1TB SSD</h3>
+            <p>Perfect for gaming and quick boot times.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="image-container">
+              <img src="images/nvme.jpg" alt="1TB NVMe SSD">
+              <div class="price-tag">$109.99</div>
+            </div>
+            <h3>MSI 1TB NVMe</h3>
+            <p>Blazing-fast PCIe Gen4 storage for high-speed performance.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="image-container">
+              <img src="images/seagate.jpg" alt="1TB HDD">
+              <div class="price-tag">$39.99</div>
+            </div>
+            <h3>Seagate 1TB HDD</h3>
+            <p>Affordable solution for mass storage and backups.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="image-container">
+              <img src="images/seagate2.webp" alt="2TB HDD">
+              <div class="price-tag">$59.99</div>
+            </div>
+            <h3>Seagate 2TB HDD</h3>
+            <p>Massive capacity at a great price for media storage.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="image-container">
+              <img src="images/external.jpg" alt="1TB External Drive">
+              <div class="price-tag">$69.99</div>
+            </div>
+            <h3>Transcend 1TB External HDD</h3>
+            <p>Portable and USB-powered storage for backup and travel.</p>
+            <div class="actions">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          
+</div>
+</section>
+    
+  
+  
+
+</main>
+
+ 
+<footer class="footer-section">
+    <div class="container">
+      <!-- Footer Content -->
+      <div class="footer-content">
+        <!-- Left Section: Logo and Address -->
+        <div class="footer-left">
+            <h3>Info</h3>
+          <p>Your ultimate destination for gaming solutions. We’re here to make your gaming journey legendary!</p>
+          <p><strong>Address:</strong> 123 NextPlay, Majestic City, Bambalapitiya</p>
+          <p><strong>Address:</strong> 123 NextPlay, Kandy City Centre, Kandy</p>
+          <p><strong>Email:</strong> <a href="mailto:info@nextplay.com">info@nextplay.com</a></p>
+          <p><strong>Phone:</strong> +1 234 567 8900</p>
+        </div>
+  
+        <!-- Center Section: Quick Links -->
+        <div class="footer-center">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="UPG.html">Upcoming Games</a></li>
+            <li><a href="gamingperi.html">Gaming Peripherals</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Right Section: Social Media and Contact -->
+        <div class="footer-right">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p><strong>Customer Support:</strong> support@nextplay.com</p>
+          <p><strong>Sales Inquiry:</strong> sales@nextplay.com</p>
+        </div>
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2025 Nextplay. All Rights Reserved.</p>
+        
+      </div>
+    </div>
+  </footer>
+  <script src="cart.js"></script>
+  <script src="cart.js"></script>
+</body>
+  
+
+</html>
