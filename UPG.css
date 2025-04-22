@@ -126,6 +126,45 @@ header nav ul li:hover .dropdown {
   }
 }
 
+/*cart*/
+.cart-indicator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #000000;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.cart-indicator i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.cart-notification {
+  position: fixed;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 1000;
+}
+
+.cart-notification.show {
+  top: 20px;
+}
+
 
 /* Upcoming Games Section */
 .upcoming-games {
