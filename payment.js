@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Redirect to homepage
         setTimeout(() => {
-          window.location.href = 'index.html';
+          window.location.href = 'computerparts.html';
         }, 1000);
       } else {
         // Show validation errors
