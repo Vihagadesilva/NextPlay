@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Redirect to homepage
         setTimeout(() => {
-          window.location.href = 'Index.html';
+          window.location.href = 'index.html';
         }, 1000);
       } else {
         // Show validation errors
